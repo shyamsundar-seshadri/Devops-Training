@@ -12,4 +12,12 @@ docker-machine --help
 
 ### To Change default
 eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env <new-machine-name>)  
+Eg:
 eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env sgfirst)  
+
+### To check Configuration
+docker-machine env sgfirst  
+
+## Docker Client
+### To load the image from local tar file
+docker load image_name
