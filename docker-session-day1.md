@@ -56,7 +56,7 @@ docker run -it --name volume_test --mount type=volume,source=volume1,target=/dat
 
 
 ## Network
-Types:
+Types:  
 &nbsp;&nbsp;Bridge - Same N/W  
 &nbsp;&nbsp;Host Only - only within the containers in that host  
-&nbsp;&nbsp; NAT (Network Address Translation) - Ip to Ip config . Uses the IP of host  
+&nbsp;&nbsp;NAT (Network Address Translation) - Ip to Ip config . Uses the IP of host  
