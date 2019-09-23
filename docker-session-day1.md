@@ -31,6 +31,6 @@ docker container attach <container-id>
 
 ## Mounts
 Types:  
-&nbsp;&nbsp;&nbsp;&nbspVolume  
-&nbsp;&nbsp;&nbsp;&nbspByte  
-&nbsp;&nbsp;&nbsp;&nbspTemporary File System  
+&nbsp;&nbsp;&nbsp;&nbsp;Volume  
+&nbsp;&nbsp;&nbsp;&nbsp;Byte  
+&nbsp;&nbsp;&nbsp;&nbsp;Temporary File System  
