@@ -53,3 +53,10 @@ docker run -it --name bind_test --mount type=bind,source=/storage,target=/data u
 ### Volume
 docker volume create volume1  
 docker run -it --name volume_test --mount type=volume,source=volume1,target=/data2 ubuntu /bin/bash
+
+
+## Network
+Types:
+&nbsp;&nbsp;Bridge - Same N/W
+&nbsp;&nbsp;Host Only - only within the containers in that host
+&nbsp;&nbsp; NAT (Network Address Translation) - Ip to Ip config . Uses the IP of host
