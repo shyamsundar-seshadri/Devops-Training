@@ -27,3 +27,10 @@ docker save image_name
 
 ## To get into the os 
 docker container attach <container-id>
+
+
+## Mounts
+Types:  
+  Volume  
+  Byte  
+  Temporary File System  
