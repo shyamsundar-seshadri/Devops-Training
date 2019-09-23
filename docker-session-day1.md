@@ -1,5 +1,8 @@
 
 # 23 -Sep  
+## Trainer Details
+Hiran
+email: info@mjit.in
 ## Docker machine :  
 They are the docker engine running in the host
 ### To list them  
