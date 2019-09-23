@@ -35,4 +35,11 @@ Types:
 &nbsp;&nbsp;&nbsp;&nbsp;Bind  - connecting docker machine host file system to container  
 &nbsp;&nbsp;&nbsp;&nbsp;Temporary File System - tmpfs - To store on memory  
 
-NAS path is mounted to docker-container system which is then mounted to container through "bind"
+NAS path is mounted to docker-container system which is then mounted to container through "bind"  
+
+### Bind
+To login into docker machine   
+docker-machine ssh sgfirst  
+
+Create a image and mount the above to it  
+docker run -it --name bind_test --mount type=bind,source=/storage,target=/data ubuntu /bin/bash  
