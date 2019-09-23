@@ -31,6 +31,8 @@ docker container attach <container-id>
 
 ## Mounts
 Types:  
-&nbsp;&nbsp;&nbsp;&nbsp;Volume  
-&nbsp;&nbsp;&nbsp;&nbsp;Byte  
-&nbsp;&nbsp;&nbsp;&nbsp;Temporary File System  
+&nbsp;&nbsp;&nbsp;&nbsp;Volume  - Space maintained by Docker by creating inside docker  
+&nbsp;&nbsp;&nbsp;&nbsp;Bind  - connecting docker machine host file system to container  
+&nbsp;&nbsp;&nbsp;&nbsp;Temporary File System - tmpfs - To store on memory  
+
+NAS path is mounted to docker-container system which is then mounted to container through "bind"
