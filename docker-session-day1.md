@@ -26,14 +26,17 @@ docker load image_name
 docker save image_name
 
 ## To get into the os 
-docker container attach <container-id>
+docker container attach <container-id>  
+
+To come out without stopping container  
+<ctrl><p><q>  
 
 
 ## Mounts
 Types:  
 &nbsp;&nbsp;&nbsp;&nbsp;Volume  - Space maintained by Docker by creating inside docker  
 &nbsp;&nbsp;&nbsp;&nbsp;Bind  - connecting docker machine host file system to container  
-&nbsp;&nbsp;&nbsp;&nbsp;Temporary File System - tmpfs - To store on memory  
+&nbsp;&nbsp;&nbsp;&nbsp;Temporary File System - tmpfs - To store on memory. On restart of container the data is vanished  
 
 NAS path is mounted to docker-container system which is then mounted to container through "bind"  
 
@@ -43,3 +46,7 @@ docker-machine ssh sgfirst
 
 Create a image and mount the above to it  
 docker run -it --name bind_test --mount type=bind,source=/storage,target=/data ubuntu /bin/bash  
+
+### Volume
+docker volume create volume1  
+docker run -it --name volume_test --mount type=volume,source=volume1,target=/data2 ubuntu /bin/bash
