@@ -21,3 +21,9 @@ docker-machine env sgfirst
 ## Docker Client
 ### To load the image from local tar file
 docker load image_name
+
+### To Save image as tar file
+docker save image_name
+
+## To get into the os 
+docker container attach <container-id>
