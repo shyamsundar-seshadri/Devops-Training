@@ -1,0 +1,117 @@
+  380  cd d:
+  381  mkdir git
+  382  cd git
+  383  git -v
+  384  git --version
+  385  git --help
+  386  cd ..
+  387  mv git/ repos
+  388  ls -lrt
+  389  cd repos/
+  390  ls -lrt
+  391  mkdir firstrepo
+  392  cd firstrepo/
+  393  ls -lrt
+  394  git init
+  395  ls -lrt
+  396  cd .git/
+  397  ls -lrt
+  398  cd config 
+  399  ls 
+  400  cat config 
+  401  cd objects/
+  402  ls
+  403  cd ../..
+  404  pwd
+  405  ls
+  406  ls -lrt
+  407  ls -alrt
+  408  touch test
+  409  cat "hi" > test
+  410  echo "hi" > test 
+  411  git status
+  412  git add test
+  413  git status
+  414  git config --get
+  415  git config --get global
+  416  git config --get use
+  417  git config --get user
+  418  git config --get username
+  419  git config --getall
+  420  git config --get-all
+  421  git config --get-all --global
+  422  git config --global --get-all
+  423  git config --global
+  424  git config --list --global
+  425  git config --list
+  426  git config --list global
+  427  git config --system user.email "sssrox@gmail.com:
+  428  git config --system user.email "sssrox@gmail.com"
+  429  git config --global user.email "sssrox@gmail.com"
+  430  git config --global user.name "Shyam"
+  431  git commit -m "my first comit"
+  432  git push
+  433  git remote add origin ssh://admin@192.168.99.101:29418/firstrepo.git
+  434  git push
+  435  git push origin master
+  436  history -50
+  437  history
+  438  history | tail
+  439  cd ../secondrepo/
+  440  git flow init
+  441  touch touchfile
+  442  echo "tect" > touchfile 
+  443  git status
+  444  git add touchfile 
+  445  git commit -m "first commit"
+  446   git remote add origin ssh://admin@192.168.99.101:29418/secondrepo.git
+  447  git push remote origin
+  448  git oush
+  449  git push 
+  450  git push origin develop 
+  451  vi touchfile 
+  452  git checkout -b jira1 develop
+  453  git commit -m "second commit in branch"
+  454  git add touchfile 
+  455  git commit -m "third commit in branch"
+  456  git push origin jira1 
+  457  git branch --list
+  458  git feature --help
+  459  git switch develop
+  460  git branch --help
+  461  git flow feature
+  462  git flow feature start jira2
+  463  touch file3
+  464  git add file3 file3 
+  465  git commit -m "4th commit"
+  466  git push origin featurejira2 
+  467  git flow feature finish featurejira2
+  468  git flow feature finish jira2
+  469  cd ../firstrepo/
+  470  git flow init
+  471  ls
+  472  history | tail -100
+  473  git flow release start 
+  474  git flow release start v1.0
+  475   git flow release finish 'v1.0'
+  476  gut push
+  477  git push
+  478  git push origin develop
+  479  git push origin master
+  480  git push origin vv1.0 
+  481  git branch list
+  482  git branch --list
+  483  git branch rm list
+  484  git push --all
+  485  git branch 
+  486  git branch --help
+  487  git branch --delete list
+  488  git branch --delete rm
+  489  git push --all
+  490  git push origin --delete list
+  491  git push origin --delete rm
+  492  history | tail -120
+  493  history | tail -115 > git_commands.txt
+
+docker volume create jenkins_vol
+  docker run -p 8085:8080 -p 50000:50000 --mount type=volume,source=jenkins_vol,target=/var/jenkins_home jenkins
